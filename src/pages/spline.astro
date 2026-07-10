@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import { SplineScene } from "../components/ui/splite.tsx";
+---
+
+<Layout title="Spline | TeddyHub">
+  <div class="page-shell">
+    <Navbar />
+
+    <section class="section-card">
+      <p class="eyebrow">3D robot preview</p>
+      <h2>Interactive scene in full view</h2>
+      <p>
+        This page renders the exact same Spline scene as the skills preview in a larger full-view layout.
+      </p>
+
+      <div class="spline-panel cursor-target">
+        <SplineScene
+          client:load
+          scene="https://prod.spline.design/zOfkvlCyGD7AkV0a/scene.splinecode"
+          className="spline-viewer"
+        />
+      </div>
+    </section>
+  </div>
+</Layout>

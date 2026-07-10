@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="TeddyHub — Futuristic Portfolio">
+  <div class="page-shell">
+    <Navbar />
+
+    <main class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow">Creative developer • interactive experiences</p>
+        <h1>Building the next generation of immersive digital products.</h1>
+        <p class="lead">
+          I craft cinematic interfaces, thoughtful motion systems, and 3D-ready experiences that feel alive.
+        </p>
+        <div class="hero-actions">
+          <a href="/skills" class="button button-primary">Explore skills</a>
+          <a href="/projects" class="button button-secondary">See projects</a>
+        </div>
+      </section>
+
+      <div class="hero-visual">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <img src="/images/profile/hero.png" alt="Portrait of Teddy" />
+      </div>
+    </main>
+
+    <section class="section-card">
+      <p class="eyebrow">About</p>
+      <h2>Futuristic interfaces that balance clarity, motion, and impact.</h2>
+      <p>
+        I blend performance-minded frontend engineering with bold visual storytelling to create polished products for founders, brands, and ambitious creators.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <p class="eyebrow">Featured work</p>
+      <div class="project-card">
+        <div>
+          <h3>Neon Studio Platform</h3>
+          <p>A modular experience design system for immersive product launches and storytelling pages.</p>
+        </div>
+        <a href="/projects" class="text-link">Open projects →</a>
+      </div>
+    </section>
+
+    <section class="section-card contact-card">
+      <p class="eyebrow">Let’s create</p>
+      <h2>Ready to build something iconic?</h2>
+      <a href="/contact" class="button button-primary">Say hello</a>
+    </section>
+  </div>
+</Layout>

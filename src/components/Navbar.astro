@@ -1,0 +1,23 @@
+---
+import ViewSwitch from './ViewSwitch.jsx';
+---
+
+<header class="navbar">
+  <div class="container">
+    <a href="/" class="logo">TEDDY<span>HUB</span></a>
+
+    <div class="navbar-right">
+      <nav class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/skills" class="nav-link">Skills</a>
+        <a href="/spline" class="nav-link">Spline</a>
+        <a href="/projects" class="nav-link">Projects</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="view-switch-wrapper">
+        <ViewSwitch client:load />
+      </div>
+    </div>
+  </div>
+</header>

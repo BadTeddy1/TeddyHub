@@ -1,0 +1,44 @@
+---
+import { SplineScene as RobotScene } from './ui/splite.tsx';
+---
+
+<section class="skills-shell" id="skills">
+  <p class="eyebrow">Skill matrix</p>
+  <h1>Crafting immersive interfaces with a futuristic stack.</h1>
+  <p class="lead">Browse my core skills below, then continue to the live robot preview.</p>
+
+  <div class="skills-grid">
+    <article class="skill-card">
+      <h3>Frontend</h3>
+      <p>Astro • React • TypeScript • Motion systems • UI systems</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Creative tooling</h3>
+      <p>Figma • 3D concepts • procedural visuals • cinematic transitions</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Backend</h3>
+      <p>Node.js • APIs • data modeling • performant architecture</p>
+    </article>
+
+    <article class="skill-card">
+      <h3>Product thinking</h3>
+      <p>Design systems • rapid prototyping • storytelling • conversion-focused UX</p>
+    </article>
+  </div>
+
+  <div class="scene-panel cursor-target" id="robot">
+    <RobotScene
+      client:load
+      scene="https://prod.spline.design/zOfkvlCyGD7AkV0a/scene.splinecode"
+      className="robot-viewer"
+    />
+
+   
+    <div class="cta-panel">
+      <a href="#robot" class="button button-primary">Open classic single-page view</a>
+    </div>
+  </div>
+</section>

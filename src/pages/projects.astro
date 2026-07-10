@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Projects | TeddyHub">
+  <div class="page-shell">
+    <Navbar />
+
+    <section class="section-card">
+      <p class="eyebrow">Projects</p>
+      <h2>Selected builds that lean into performance, motion, and visual impact.</h2>
+      <div class="project-card">
+        <div>
+          <h3>TeddyHub Portfolio</h3>
+          <p>A futuristic portfolio experience designed for storytelling, polish, and fluid interaction.</p>
+        </div>
+        <a href="/" class="text-link">Visit homepage →</a>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <p class="eyebrow">Lessons</p>
+      <h2>Web development lessons and growth notes.</h2>
+      <p>These are the exercises, learning milestones, and code experiments I’m using to sharpen my skills while building real frontend experiences.</p>
+      <div class="lessons-grid">
+        <article class="lesson-card">
+          <h3>Responsive layout experiments</h3>
+          <p>Building flexible sections, adaptive grids, and cross-device navigation patterns.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Motion and interaction design</h3>
+          <p>Animating UI states, micro-interactions, and immersive hover experiences with smooth transitions.</p>
+        </article>
+        <article class="lesson-card">
+          <h3>Modern frontend pipelines</h3>
+          <p>Using Astro, React, and build tooling to create fast static pages and dynamic UI components.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+
+const { title = "TeddyHub" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+
+    <meta
+        name="description"
+        content="Premium portfolio of Sunday Michael Owoicho, Frontend Developer and Computer Science Student."
+    />
+
+    <link rel="icon" href="/favicon.svg" />
+</head>
+
+<body>
+
+    <slot />
+
+</body>
+
+</html>
