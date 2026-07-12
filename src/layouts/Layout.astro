@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { Analytics } from "@vercel/analytics/astro";
+import Analytics from "@vercel/analytics/astro";
 
 const { title = "TeddyHub" } = Astro.props;
 ---
@@ -62,7 +62,7 @@ const { title = "TeddyHub" } = Astro.props;
 
 <body>
   <slot />
- 
+  <Analytics />
 </body>
 
 </html>
