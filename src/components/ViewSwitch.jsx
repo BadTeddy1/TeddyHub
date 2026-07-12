@@ -17,7 +17,6 @@ export default function ViewSwitch() {
     window.localStorage.setItem(VIEW_STORAGE_KEY, next);
     document.documentElement.dataset.siteView = next;
     setView(next);
-    window.location.href = next === "classic" ? "/classic" : "/";
   };
 
   return (

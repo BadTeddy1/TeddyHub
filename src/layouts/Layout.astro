@@ -1,11 +1,13 @@
 ---
 import "../styles/global.css";
+import { Analytics } from "@vercel/analytics/astro";
 
 const { title = "TeddyHub" } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+...
 <head>
     <meta property="og:type" content="website" />
 
@@ -66,7 +68,7 @@ content="https://teddyhub-eight.vercel.app/images/profile/hero.png"
 <body>
 
     <slot />
-
+<Analytics />
 </body>
 
 </html>
