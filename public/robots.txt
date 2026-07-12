@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://teddyhub-eight.vercel.app/sitemap-index.xml
