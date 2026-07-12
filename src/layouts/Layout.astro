@@ -7,36 +7,15 @@ const { title = "TeddyHub" } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-...
 <head>
-    <meta property="og:type" content="website" />
-
-<meta
-property="og:title"
-content="TeddyHub"
-/>
-
-<meta
-property="og:description"
-content="Modern websites and premium digital experiences."
-/>
-
-<meta
-property="og:url"
-content="https://teddyhub-eight.vercel.app"
-/>
-
-<meta
-property="og:image"
-content="https://teddyhub-eight.vercel.app/images/profile/hero.png"
-/>
   <meta charset="UTF-8" />
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   />
 
-  <title>TeddyHub | Software Engineer & Web Developer</title>
+  <title>{title} | TeddyHub</title>
 
   <meta
     name="description"
@@ -62,13 +41,28 @@ content="https://teddyhub-eight.vercel.app/images/profile/hero.png"
     rel="canonical"
     href="https://teddyhub-eight.vercel.app/"
   />
-<link rel="icon" href="/favicon.ico" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TeddyHub" />
+  <meta
+    property="og:description"
+    content="Modern websites and premium digital experiences."
+  />
+  <meta
+    property="og:url"
+    content="https://teddyhub-eight.vercel.app"
+  />
+  <meta
+    property="og:image"
+    content="https://teddyhub-eight.vercel.app/images/profile/hero.png"
+  />
 </head>
 
 <body>
-
-    <slot />
-<Analytics />
+  <slot />
+  <Analytics />
 </body>
 
 </html>
